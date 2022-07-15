@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/matchMatch_">
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/progress_countdown"
+        style="@style/Widget.MaterialProgressBar.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:minWidth="@dimen/_240sdp"
+        android:minHeight="@dimen/_260sdp" />
+
+    <TextView
+        android:id="@+id/textView_countdown"
+        style="@style/mainTitle_"
+        android:layout_centerInParent="true"
+        tools:text="10:00" />
+
+    <LinearLayout
+        style="@style/matchWrap_"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_start"
+            style="@style/fabButton_"
+            app:srcCompat="@android:drawable/ic_media_play"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_pause"
+            style="@style/fabButton_"
+            app:srcCompat="@android:drawable/ic_media_pause"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_stop"
+            style="@style/fabButton_"
+            app:srcCompat="@android:drawable/alert_dark_frame"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+</RelativeLayout>

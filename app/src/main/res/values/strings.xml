@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Timer</string>
+    <string name="settings">Settings</string>
+    <string name="timer_des">Create your own timer with optional alarms and start/pause/stop them simultaneously or sequentially</string>
+    <string name="notifications">Notifications</string>
+    <string name="notify_des">Allow the app to send notifications with timer state ?</string>
+    <string name="timer_len_des">For how many minutes should timer run?</string>
+    <string name="timer_len">Timer length (minutes)</string>
+</resources>
